@@ -68,3 +68,18 @@
 | FORCE_SUB_CHANNEL | Without @ | Anime_UpdatesAU       |
 | PORT  | 8080 |
 
+
+---
+
+## 📚 Commands
+
+  text
+```
+- `start` - check bot is alive or not
+- `set_time 10` → set auto delete timer
+- `disable` → disable auto delete
+- `status` → show current timer
+- `broadcast <msg>` → send message to users
+- `users` → total users
+```
+---

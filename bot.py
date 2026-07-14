@@ -64,7 +64,7 @@ async def start(_, message):
 
     # FORCE SUB CHECK
     if not await check_force_sub(bot, message.chat.id, user_id):
-        btn = [[InlineKeyboardButton("🔔 Jᴏɪɴ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{FORCE_SUB_CHANNEL}")]]
+        btn = [[InlineKeyboardButton("• Jᴏɪɴ Cʜᴀɴɴᴇʟ •", url=f"https://t.me/{FORCE_SUB_CHANNEL}")]]
         await message.reply(
             "**›› ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, sᴜʙsᴄʀɪʙᴇ ɴᴏw.**",
             reply_markup=InlineKeyboardMarkup(btn)
@@ -97,14 +97,14 @@ async def start(_, message):
     buttons = [
         [InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                               url=f"https://t.me/{BOT_USERNAME}?startgroup=true&admin=delete_messages")],
-        [InlineKeyboardButton("❓ ʜᴇʟᴘ", callback_data="help"),
-         InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")]
+        [InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
+         InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about")]
     ]
 
     await message.reply_text(
         "**👋 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝖬𝖣 𝖠𝗎𝗍𝗈 𝖣𝖾𝗅𝖾𝗍𝖾𝗋 𝖡𝗈𝗍!**\n\n"
         "**𝖨 𝖼𝖺𝗇 𝖺𝗎𝗍𝗈-𝖽𝖾𝗅𝖾𝗍𝖾 𝗀𝗋𝗈𝗎𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖺𝖿𝗍𝖾𝗋 𝖺 𝗌𝖾𝗍 𝗍𝗂𝗆𝖾.**\n"
-        "**𝖴𝗌𝖾 𝗆𝖾 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌 𝗍𝗈 𝗄𝖾𝖾𝗉 𝗍𝗁𝖾𝗆 𝖼𝗅𝖾𝖺𝗇**.\n\n**𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆** @Anime_UpdatesAU",
+        "**𝖴𝗌𝖾 𝗆𝖾 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌 𝗍𝗈 𝗄𝖾𝖾𝗉 𝗍𝗁𝖾𝗆 𝖼𝗅𝖾𝖺𝗇**.\n\n**𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆** @Aero_Unity",
         reply_markup=InlineKeyboardMarkup(buttons),
         parse_mode=enums.ParseMode.MARKDOWN
     )
@@ -125,7 +125,7 @@ async def callback_handler(_, query: CallbackQuery):
         )
     elif query.data == "about":
         await query.message.edit_text(
-             """<b>ℹ️ ᴀʙᴏᴜᴛ</b>
+             """<b>• ᴀʙᴏᴜᴛ •</b>
 
 ⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/MD_AutoDelete_bot">ᴍᴅ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ʙᴏᴛ</a>
@@ -134,24 +134,24 @@ async def callback_handler(_, query: CallbackQuery):
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/downloads/">ᴘʏᴛʜᴏɴ 𝟹</a>
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
 ‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href="https://render.com/">Bᴏᴛs Sᴇʀᴠᴇʀ</a>
-‣ ᴜᴘᴅᴀᴛᴇs : <a href="https://t.me/Anime_UpdatesAU">ᴀɴɪᴍᴇ ᴜᴘᴅᴀᴛᴇs</a>
-‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.𝟶 <a href="https://t.me/Anime_UpdatesAU">sᴛᴀʙʟᴇ</a>
+‣ ᴜᴘᴅᴀᴛᴇs : <a href="https://t.me/Aero_Unity">ᴀᴇʀᴏ ᴜɴɪᴛʏ</a>
+‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.𝟶 <a href="https://t.me/Aero_Unity">sᴛᴀʙʟᴇ</a>
 
 </b>""",
         reply_markup=InlineKeyboardMarkup([
             [
                 InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="back"),
-                InlineKeyboardButton("Rᴇᴘᴏ", url="https://github.com/MohammedDev-yt/MD-Auto-Delete-Bot")
+                InlineKeyboardButton("• Rᴇᴘᴏ •", url="https://github.com/MohammedDev-yt/MD-Auto-Delete-Bot")
             ]
         ]),
         parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "back":
         await query.message.edit_text(
-            "**👋 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝖬𝖣 𝖠𝗎𝗍𝗈 𝖣𝖾𝗅𝖾𝗍𝖾𝗋 𝖡𝗈𝗍!**\n\n**𝖨 𝖼𝖺𝗇 𝖺𝗎𝗍𝗈-𝖽𝖾𝗅𝖾𝗍𝖾 𝗀𝗋𝗈𝗎𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖺𝖿𝗍𝖾𝗋 𝖺 𝗌𝖾𝗍 𝗍𝗂𝗆𝖾.**\n**𝖴𝗌𝖾 𝗆𝖾 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌 𝗍𝗈 𝗄𝖾𝖾𝗉 𝗍𝗁𝖾𝗆 𝖼𝗅𝖾𝖺𝗇.**\n\**𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆** @Anime_UpdatesAU",
+            "**👋 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝖬𝖣 𝖠𝗎𝗍𝗈 𝖣𝖾𝗅𝖾𝗍𝖾𝗋 𝖡𝗈𝗍!**\n\n**𝖨 𝖼𝖺𝗇 𝖺𝗎𝗍𝗈-𝖽𝖾𝗅𝖾𝗍𝖾 𝗀𝗋𝗈𝗎𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖺𝖿𝗍𝖾𝗋 𝖺 𝗌𝖾𝗍 𝗍𝗂𝗆𝖾.**\n**𝖴𝗌𝖾 𝗆𝖾 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌 𝗍𝗈 𝗄𝖾𝖾𝗉 𝗍𝗁𝖾𝗆 𝖼𝗅𝖾𝖺𝗇.**\n\**𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆** @Aero_Unity",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=none&admin=delete_messages")],
-                [InlineKeyboardButton("❓ ʜᴇʟᴘ", callback_data="help"), InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")]
+                [InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"), InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about")]
             ])
         )
 

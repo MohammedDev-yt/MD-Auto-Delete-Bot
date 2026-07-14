@@ -16,7 +16,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN","")
 
 DATABASE_URL = os.environ.get("DATABASE_URL","")
 BOT_USERNAME = os.environ.get("BOT_USERNAME","AU_Auto_Delete_bot") # Without @
-FORCE_SUB_CHANNEL = os.environ.get("FORCE_SUB_CHANNEL", "Anime_UpdatesAU")  # without @
+FORCE_SUB_CHANNEL = os.environ.get("FORCE_SUB_CHANNEL", "Aero_Unity")  # without @
 
 # ------------------------- #
 # Don't Remove Credit 

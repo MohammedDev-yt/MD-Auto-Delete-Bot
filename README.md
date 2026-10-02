@@ -113,7 +113,7 @@
 </p>
 
 ---
----
+
 <h3 align="center">
     ─「 ᴅᴇᴘʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
 </h3>
@@ -126,7 +126,6 @@
 
 </details>
 
----
 ---
 
 <details><summary>How To Keep Your Bot Alive</summary>
@@ -175,8 +174,6 @@ After adding monitor click:
      
 - Developer: <a href="https://t.me/Mr_Mohammed_29"><b>ᴍᴏʜᴀᴍᴍᴇᴅ</b></a>  
 - Updates: <a href="https://t.me/Aero_Unity"><b>ᴀᴇʀᴏ ᴜɴɪᴛʏ</b></a>  
-
----
 
 ---
 
